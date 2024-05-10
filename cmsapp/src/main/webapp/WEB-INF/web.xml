@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+    xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+    id="WebApp_ID" version="4.0">
+
+    <display-name>ContactManagementSystem</display-name>
+    <servlet>
+        <servlet-name>UserAPIServlet</servlet-name>
+        <servlet-class>UserAPIServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UserAPIServlet</servlet-name>
+        <url-pattern>/users</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>GroupAPIServlet</servlet-name>
+        <servlet-class>GroupAPIServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GroupAPIServlet</servlet-name>
+        <url-pattern>/groups</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>ContactAPIServlet</servlet-name>
+        <servlet-class>ContactAPIServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ContactAPIServlet</servlet-name>
+        <url-pattern>/contacts</url-pattern>
+    </servlet-mapping>
+    
+</web-app>
